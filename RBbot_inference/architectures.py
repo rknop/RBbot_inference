@@ -73,7 +73,8 @@ class DANN(nn.Module):
         input_data: torch.Tensor,
         lamb: float = 1.0,
         include_domain_clf: bool = True
-    ) -> torch.Tuple[torch.Tensor, torch.Optional[torch.Tensor]]:
+    ):
+#     ) -> torch.Tuple[torch.Tensor, torch.Optional[torch.Tensor]]:
 
         image_size = input_data.data.shape[2]
         batch_size = input_data.data.shape[0]
